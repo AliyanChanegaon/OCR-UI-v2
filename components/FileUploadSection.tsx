@@ -148,8 +148,7 @@ const handleRemoveFile = () => {
           isDragActive ? 'bg-muted/50 rounded-lg' : ''
         } ${isLoading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
       >
-        <div className="flex flex-col items-center gap-2" onClick={() => fileInputRef.current?.click()}
-    style={{border:'2px solid red'}}>
+        <div className="flex flex-col items-center gap-2" onClick={() => fileInputRef.current?.click()}>
           <Upload className="w-12 h-12 text-muted-foreground" />
           <div className="text-center">
             <h3 className="text-lg font-semibold text-foreground">
